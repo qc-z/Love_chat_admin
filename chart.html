@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>战术统计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" href="css/chart.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h3 class="page-header"></h3>
+        <div class="row">
+          <div class="col-lg-2 col-sm-4">
+              <!-- START widget-->
+              <div class="panel widget bg-primary">
+                <div class="row row-table">
+                    <div class="col-xs-4 text-center bg-primary-dark pv-sm">
+                      <em class="glyphicon glyphicon-queen fa-3x"></em>
+                    </div>
+                    <div class="col-xs-8 pv-lg">
+                      <div class="h2 mt0 totalPay">0</div>
+                      <div class="text-uppercase">总收入(¥)</div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+              <!-- START widget-->
+              <div class="panel widget bg-purple">
+                <div class="row row-table">
+                    <div class="col-xs-4 text-center bg-purple-dark pv-sm">
+                      <em class="glyphicon glyphicon-calendar fa-3x"></em>
+                    </div>
+                    <div class="col-xs-8 pv-lg">
+                      <div class="h2 mt0 lastTotal">0</div>
+                      <div class="text-uppercase">总支付次数</div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+              <!-- START widget-->
+              <div class="panel widget bg-yellow">
+                <div class="row row-table">
+                    <div class="col-xs-4 text-center bg-yellow-dark pv-sm">
+                      <em class="glyphicon glyphicon-folder-close fa-3x"></em>
+                    </div>
+                    <div class="col-xs-8 pv-lg">
+                      <div class="h2 mt0 lastOrder">0</div>
+                      <div class="text-uppercase">总注册人数</div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+              <!-- START widget-->
+              <div class="panel widget bg-gray">
+                <div class="row row-table">
+                    <div class="col-xs-4 text-center bg-gray-dark pv-sm">
+                      <em class="glyphicon glyphicon-screenshot fa-3x"></em>
+                    </div>
+                    <div class="col-xs-8 pv-lg">
+                      <div class="h2 mt0 todayTotal">0</div>
+                      <div class="text-uppercase">今日收入(¥)</div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+              <!-- START widget-->
+              <div class="panel widget bg-inverse">
+                <div class="row row-table">
+                    <div class="col-xs-4 text-center bg-inverse-dark pv-sm">
+                      <em class="glyphicon glyphicon-flag fa-3x"></em>
+                    </div>
+                    <div class="col-xs-8 pv-lg">
+                      <div class="h2 mt0 todayOrder">0</div>
+                      <div class="text-uppercase">今日订单</div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+                  <!-- START date widget-->
+            <div class="panel widget">
+               <div class="row row-table">
+                  <div class="col-xs-6 text-center bg-green pv-sm">
+                     <span>今日注册男性</span>
+                     <br>
+                     <br>
+                     <div class="h2 mt0" id="todayboy">100</div>
+                  </div>
+                  <div class="col-xs-6 text-center bg-primary-dark pv-sm">
+                     <span>今日注册女性</span>
+                     
+                     <br>
+                     <br>
+                     <div class="h2 mt0" id="todaygirl">100</div>
+                  </div>
+               </div>
+            </div>
+            <!-- END date widget    -->
+         </div>
+        </div> <!-- /row-->
+      <!-- <h3 class="page-header">总收入金额：¥3234234</h3> -->
+      <h3 class="page-header"></h3>
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="panel">
+                   <div class="panel-heading">
+                   <h5>团队分成：<span class="teamValue"></span></h5>
+                   <span style="color: #800080">距月目标金额: <span class="lessTarget"></span></span>
+                   </div>
+                   <div class="panel-body text-center">
+                      <input id="knob-chart2" type="text" value="75%">
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel">
+                   <div class="panel-heading">
+                   <div class="sexRate"></div>
+                   <span style="color: #800080">审核通过女性比例</span>
+                   </div>
+                   <div class="panel-body text-center">
+                      <input id="knob-chart3" type="text" value="0">
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="panel panel-default">
+                  <div class="panel-heading"> 前五天订单量</div>
+                  <div class="panel-body">
+                    <div id="ct-line1" class="ct-chart"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel">
+                   <div class="panel-heading">年龄比例</div>
+                   <div class="panel-body text-center">
+                      <div class="chart-pie flot-chart"></div>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 chinaMap">
+          <div class="panel">
+             <div class="panel-body text-center">
+                <div id="chinaMap" style="width: 100%;height:900px;"></div>
+             </div>
+          </div>
+        </div>
+      </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="vendor/jquery-knob/js/jquery.knob.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="vendor/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+  <script src="vendor/moment/min/moment-with-locales.min.js"></script>
+  <script src="vendor/chartist/dist/chartist.js"></script>
+  <script src="vendor/Chart.js/Chart.js"></script>
+  <script src="vendor/Flot/jquery.flot.js"></script>
+  <script src="vendor/Flot/jquery.flot.resize.js"></script>
+  <script src="vendor/Flot/jquery.flot.pie.js"></script>
+  <script src="vendor/echarts/dist/echarts.min.js"></script>
+  <script src="vendor/echarts/dist/china.js"></script>
+  <script src="js/http.js"></script>
+  <script src="js/chart.js"></script>
+  </body>
+  </html>

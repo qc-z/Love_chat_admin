@@ -1,0 +1,856 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>增加用户</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/add.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+    <script src="js/prefixfree.min.js"></script>
+
+	</head>
+	<body>
+		
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+	
+	<div class="page-inner">
+	<nav class="gtco-nav" role="navigation">
+				<div class="gtco-container">
+					
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="gtco-logo"><a href="index.html">登陆</a></div>
+						</div>
+						<div class="col-xs-12 text-right menu-1">
+							<ul>
+								<li><a href="auditor.html">审核列表</a></li>
+								<li><a href="user.html">用户列表</a></li>
+								<li><a href="add.html">增加会员</a></li>
+								<li class="active"><a href="editperson.html">编辑会员</a></li>
+								<li><a href="sensitive.html">敏感词</a></li>
+								<li><a href="pay.html">订单列表</a></li>
+								<li><a href="coupon.html">邀请码</a></li>
+								<li><a href="hotload.html">热更新</a></li>
+								<li><a href="apk.html">包管理</a></li>
+								<li><a href="mockCheck.html">消息盒子</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</nav>
+	
+	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image: url(images/img_1.jpg)">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+					
+<!-- 
+					<div class="row row-mt-15em">
+
+						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+							<span class="intro-text-small">相信我们的产品</span>
+							<h1>宠爱app</h1>	
+						</div>
+						
+					</div> -->
+							
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+	<div class="gtco-section border-bottom">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-6 animate-box">
+					<!-- <form> -->
+						<h3>昵称</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="name">昵称</label>
+								<input type="text" id="name" class="form-control" placeholder="昵称">
+							</div>
+							
+						</div>
+						<h3>性别</h3>
+						<ul id="sex">
+					            <select>
+								  <option value="1">男</option>
+								  <option value="2">女</option>
+								</select>
+					    </ul>
+					    <h3>年龄</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="name">年龄</label>
+								<input type="number" id="age" class="form-control" placeholder="年龄">
+							</div>
+							
+						</div>
+						<h3>地区</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="email">地区</label>
+								<input type="text" id="area" class="form-control" placeholder="地区">
+							</div>
+						</div>
+						<h3>电话</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="phone">电话</label>
+								<input type="text" id="phone" class="form-control" placeholder="电话">
+							</div>
+						</div>
+						<!-- <h3>密码</h3>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="passeword">电话</label>
+								<input type="text" id="passeword" class="form-control" placeholder="密码">
+							</div>
+						</div> -->
+					        <!-- <ul id="isvip">
+					            <li>
+					                <p>是否会员</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="1"/>是</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="0"/>否</li>
+					        </ul> -->
+					        <ul id="lovePrice">
+					            <li>
+					                <p>宠爱指数</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="小清新"/>小清新</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="浪漫" />浪漫</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="轻奢" />轻奢</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="高奢" />高奢</li>
+					        </ul>
+					        <ul id="loveDate">
+					            <li>
+					                <p>甜蜜目标</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="初见" />初见</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="短期" />短期</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="长期" />长期</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="密友" />密友</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="结婚" />结婚</li>
+					        </ul>
+					        <ul id="assets">
+					            <li>
+					                <p>总资产</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="500万" />500万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="1000万" />1000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="2000万" />2000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="5000万" />5000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="1亿" />1亿</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="2亿" />2亿</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="5亿" />5亿</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="10亿以上" />10亿以上</li>
+					        </ul>
+					        <ul id="income">
+					            <li>
+					                <p>年收入</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="50万" />50万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="100万" />100万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="200万" />200万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="500万" />500万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="1000万" />1000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="2000万" />2000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="5000万" />5000万</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="1亿以上" />1亿以上</li>
+					        </ul>
+					        <ul id="sports">
+					            <li>
+					                <p>运动</p>
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="游泳"/> <span>游泳</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="跑步" /> <span>跑步</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="健身" /> <span>健身</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="瑜伽" /> <span>瑜伽</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="高尔夫" /> <span>高尔夫</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="赛车" /> <span>赛车</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="帆船" /> <span>帆船</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="划船风帆" /> <span>划船风帆</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="冲浪" /> <span>冲浪</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="独木舟" /> <span>独木舟</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="马球" /> <span>马球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="滑雪" /> <span>滑雪</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="打猎" /> <span>打猎</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="射击" /> <span>射击</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="登山" /> <span>登山</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="射箭" /> <span>射箭</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="潜水" /> <span>潜水</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="网球" /> <span>网球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="羽毛球" /> <span>羽毛球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="斯诺克" /> <span>斯诺克</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="保龄球" /> <span>保龄球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="足球" /> <span>足球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="篮球" /> <span>篮球</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="电子游戏" /> <span>电子游戏</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="棋牌" /> <span>棋牌</span>
+
+					            </li>
+					        </ul>
+					        <ul id="tour">
+					            <li>
+					                <p>旅游</p>
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="阳光海滩" /> <span>阳光海滩</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="自驾探险" /> <span>自驾探险</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="人文历史" /> <span>人文历史</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="都市购物" /> <span>都市购物</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="极限运动" /> <span>极限运动</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="豪华酒店" /> <span>豪华酒店</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="产业探究" /> <span>产业探究</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="派对交友" /> <span>派对交友</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="私人庄园" /> <span>私人庄园</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="地貌奇观" /> <span>地貌奇观</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="高尔夫胜地" /> <span>高尔夫胜地</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="足球联赛" /> <span>足球联赛</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="篮球联赛" /> <span>篮球联赛</span>
+
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box"  value="巡回演唱会" /> <span>巡回演唱会</span>
+
+					            </li>
+					        </ul>
+					        <ul id="body">
+					            <li>
+					                <p>体型</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="较瘦" />较瘦</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="健美" />健美</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="匀称" />匀称</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="S型" />S型</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="微胖" />微胖</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="偏胖" />偏胖</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="偏胖" />偏胖</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="其他" />其他</li>
+					        </ul>
+					        <ul id="height">
+					            <li>
+					                <p>身高</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="137cm" />137cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="140cm" />140cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="143cm" />143cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="146cm" />146cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="149cm" />149cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="152cm" />152cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="155cm" />155cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="158cm" />158cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="161cm" />161cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="164cm" />164cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="167cm" />167cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="170cm" />170cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="173cm" />173cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="176cm" />176cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="179cm" />179cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="182cm" />182cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="185cm" />185cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="188cm" />188cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="191cm" />191cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="194cm" />194cm</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="197cm" />197cm</li>
+					        </ul>
+					        <ul id="drink">
+					            <li>
+					                <p>饮酒习惯</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="不喝酒" />不喝酒</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="社交应酬" />社交应酬</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="经常喝酒" />经常喝酒</li>
+					        </ul>
+					        <ul id="smoking">
+					            <li>
+					                <p>抽烟习惯</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="不抽烟" />不抽烟</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="偶然抽烟" />偶然抽烟</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="经常抽烟" />经常抽烟</li>
+					        </ul>
+					        <ul id="education">
+					            <li>
+					                <p>最高学历</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="高中" />高中</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="专科" />专科</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="学士学位" />学士学位</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="硕士研究生" />硕士研究生</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="博士/博后" />博士/博后</li>
+					        </ul>
+				        <ul>
+				            <li>
+				                <p>职业描述(其他请选择填写)</p>
+				            </li>
+				        </ul>
+						<div class="row form-group">
+							<div class="col-md-12">
+								
+								<ul id="takework">
+					            <li>
+					                <p>勾选职业描述</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="公务员" />公务员</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="律师" />律师</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="IT从业者" />IT从业者</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="金融学家" />金融学家</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="仲裁" />仲裁</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="高管" />高管</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="中层" />中层</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="骨干" />骨干</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="自由职业者" />自由职业者</li>
+					        </ul>
+					        <label class="sr-only" for="work">职业描述(下面选项没有，请选择填写)</label>
+								<textarea name="work" id="work" cols="20" rows="5" maxlength="20" class="form-control" placeholder="请输入职业描述，不可超过20字"></textarea>
+							</div>
+						</div>
+						<ul>
+				            <li>
+				                <p>个性签名(其他请选择填写)</p>
+				            </li>
+				        </ul>
+						<div class="row form-group">
+							<div class="col-md-12">
+								
+								<ul id="mancharacter">
+					            <li>
+					                <p>勾选个性签名</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="只要你不嫌弃我，我可以陪你天长地久" />只要你不嫌弃我，我可以陪你天长地久</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="爱我所爱，千夫所指我不改" />爱我所爱，千夫所指我不改</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我对你仍有爱意，我对自己无能为力" />我对你仍有爱意，我对自己无能为力</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="霸道总裁就是我，干我所干，乐我所乐" />霸道总裁就是我，干我所干，乐我所乐</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我愿成为你可以依靠的那个男人" />我愿成为你可以依靠的那个男人</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="人帅又有才，快到碗里来" />人帅又有才，快到碗里来</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我忘不了你的拥抱和那甜甜的微笑" />我忘不了你的拥抱和那甜甜的微笑</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我爱的那个女人也爱我" />我爱的那个女人也爱我</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="喜欢爱与自由，更喜欢你与温柔" />喜欢爱与自由，更喜欢你与温柔</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="左手握着幸福，右手握着回忆" />左手握着幸福，右手握着回忆</li>
+					        </ul>
+					        <ul id="womencharacter">
+					            <li>
+					                <p>勾选个性签名</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="女强人就是我，想我所想，做我所做" />女强人就是我，想我所想，做我所做</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="找个爱我的也是我爱的男人" />找个爱我的也是我爱的男人</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="姐姐我的性感妩媚不是谁都可以享受的" />姐姐我的性感妩媚不是谁都可以享受的</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我愿成为你背后默默无闻的小女人" />我愿成为你背后默默无闻的小女人</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="希望你连我生气的样子你都爱" />希望你连我生气的样子你都爱</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我在等你，一直都在，只要你转身，我就在你身后" />我在等你，一直都在，只要你转身，我就在你身后</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="有酒就喝，有爱就做，有男人就抓住" />有酒就喝，有爱就做，有男人就抓住</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="抵挡不住我温柔和美貌的人，恰巧你就是" />抵挡不住我温柔和美貌的人，恰巧你就是</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="你在哪里追求，是否已经拥有" />你在哪里追求，是否已经拥有</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我在这里就是你的小太阳" />我在这里就是你的小太阳</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我要以最美的姿态等待爱情的到来" />我要以最美的姿态等待爱情的到来</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="你说你喜欢我，姐也喜欢你那款式的货色" />你说你喜欢我，姐也喜欢你那款式的货色</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="可不可以用心爱我一次，有没有人用心懂我一次" />可不可以用心爱我一次，有没有人用心懂我一次</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="我只有一份爱，要么不付出，要付出就是全部" />我只有一份爱，要么不付出，要付出就是全部</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="幸福是要自己争取的，所以我争取了我幸福" />幸福是要自己争取的，所以我争取了我幸福</li>
+					        </ul>
+					        <label class="sr-only" for="character">个性签名</label>
+								<textarea name="self" id="character" cols="20" rows="5" maxlength="20" class="form-control" placeholder="请输入个性签名，不可超过20字"></textarea>
+							</div>
+						</div>
+						<ul>
+				            <li>
+				                <p>自我介绍(其他请选择填写)</p>
+				            </li>
+				        </ul>
+						<div class="row form-group">
+							<div class="col-md-12">
+								
+								<ul id="manselfInfo">
+					            <li>
+					                <p>勾选自我介绍(最多八项)</p>
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="潮叔" />潮叔</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="暖男" />暖男</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="小鲜肉" />小鲜肉</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="猛男" />猛男</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="霸道总裁" />霸道总裁</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="小鲜肉" />小鲜肉</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="时尚" />时尚</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="阳刚" />阳刚</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="博学" />博学</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="豪爽" />豪爽</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="比烟寂寞" />比烟寂寞</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="放在心底" />放在心底</li>
+					        </ul>
+					        <ul id="womenselfInfo">
+					            <li>
+					                <p>勾选自我介绍(最多八项)</p>
+					            </li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="贤妻良母" />贤妻良母</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="辣妹" />辣妹</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="女汉子" />女汉子</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="女强人" />女强人</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="女神" />女神</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="梦妹子" />梦妹子</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="御姐" />御姐</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="萝莉" />萝莉</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="豪爽" />豪爽</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="才女" />才女</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="淑女" />淑女</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="小女人" />小女人</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="美女" />美女</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="邻家小妹" />邻家小妹</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="宅女" />宅女</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="少女" />少女</li>
+					            <li>
+					                <input type="checkbox" name="check-box" value="软妹子" />软妹子</li>
+					        </ul>
+					        <label class="sr-only" for="selfInfo">自我介绍</label>
+								<textarea name="selfInfo" id="selfInfo" cols="30" rows="10" maxlength="200" class="form-control" placeholder="请输入自我介绍，不可超过200字"></textarea>
+							</div>
+						</div>
+						<ul id="ineed">
+					            <li>
+					                <p>我需要的</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="经济帮助" />经济帮助</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="浪漫旅行" />浪漫旅行</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="温馨约会" />温馨约会</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="情感补充" />情感补充</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="恋爱婚姻" />恋爱婚姻</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="人生指导" />人生指导</li>
+					    </ul>
+						<ul id="afford">
+					            <li>
+					                <p>我们提供的</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="经济帮助" />经济帮助</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="浪漫旅行" />浪漫旅行</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="温馨约会" />温馨约会</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="情感补充" />情感补充</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="恋爱婚姻" />恋爱婚姻</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="人生指导" />人生指导</li>
+					    </ul>
+						<ul id="hopeful">
+					            <li>
+					                <p>期待的关系</p>
+					            </li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="玩伴关系" />玩伴关系</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="激情关系" />激情关系</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="情人关系" />情人关系</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="恋爱关系" />恋爱关系</li>
+					            <li>
+					                <input type="radio" name="radio-btn" value="婚姻关系" />婚姻关系</li>
+					    </ul>
+						<!-- <ul>
+				            <li>
+				                <p>我正在寻找</p>
+				            </li>
+				        </ul>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="looking">我正在寻找</label>
+								<textarea name="looking" id="looking" cols="30" rows="10" maxlength="200" class="form-control" placeholder="请输入个性签名，不可超过200字"></textarea>
+							</div>
+						</div> -->
+
+						<div id="container">
+							<div class="con" id="con" id="con1"><button id="selectfiles" class='btns'>最多选择六张公开照片</button></div>
+							<div class="con" id="con1"><button id="selectfiles1" class='btns'>最多选择六张普通照</button></div>
+							<div class="con" id="con11"><button id="selectfiles11" class='btns'>最多选择一张头像</button></div>
+							<div class="con" id="con2"><button id="selectfiles2" class='btns'>最多选择一张生活照</button></div>
+							<div class="con" id="con3"><button id="selectfiles3" class='btns'>最多选择一张旅游照</button></div>
+							<div class="con" id="con4"><button id="selectfiles4" class='btns'>最多选择一张座驾照</button></div>
+							<div class="con" id="con5"><button id="selectfiles5" class='btns'>最多选择一张豪宅照</button></div>
+							<div class="con" id="con6"><button id="selectfiles6" class='btns'>最多选择一张奢物</button></div>
+							<div class="con" id="con7"><button id="selectfiles7" class='btns'>最多选择一张运动</button></div>
+							<div class="con" id="con8"><button id="selectfiles8" class='btns'>最多选择一张工作</button></div>
+							<div class="con" id="con9"><button id="selectfiles9" class='btns'>最多选择一张泳衣</button></div>
+							<div class="con" id="con10"><button id="selectfiles10" class='btns'>最多选择一张素颜</button></div>
+							<!-- <button id="postfiles" class='btn'>开始上传</button> -->
+						</div>
+
+						<div class="form-group group">
+							<button class="btn btn-primary" id="add">确认修改</button>
+						</div>
+
+					<!-- </form>		 -->
+				</div>
+				<!-- <div class="col-md-5 col-md-push-1 animate-box">
+					
+					<div class="gtco-contact-info">
+						<h3>上传照片</h3>
+						<ul>
+							<li class="address">后续增加</li>
+							<li class="phone">联系我们</li>
+							<li class="email">legle@com</li>
+							<li class="url">先烈中路商贸大夏2313</li>
+						</ul>
+					</div>
+
+
+				</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+ 
+	<footer id="gtco-footer" role="contentinfo"  style="padding-top: 0"> 
+		<div class="gtco-container">
+			
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">Copyright &copy; 2017.Legle</small> 
+					</p>
+					<p class="pull-right">
+						<ul class="gtco-social-icons pull-right">
+							<li><i class="icon-twitter"></i></li>
+							<li><i class="icon-facebook"></i></li>
+							<li><i class="icon-linkedin"></i></li>
+							<li><i class="icon-dribbble"></i></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="js/layer.js"></script>
+  	<script src="js/index.js"></script>
+    <script type="text/javascript" src="js/plupload.full.min.js"></script>
+  	<script src="js/src/ip.js"></script>
+  	<script src="js/src/edit.js"></script>
+  	<script src="js/src/editupload.js"></script>
+  	
+  	
+
+	</body>
+</html>
+
